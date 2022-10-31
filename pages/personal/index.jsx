@@ -126,7 +126,7 @@ const Personal = () => {
       nama: "Hello Fajri",
       pembuatan: "2024",
       wilayah: "Jawa Timur",
-      status: "Aktif",
+      status: "Tidak Aktif",
     },
   ];
 
