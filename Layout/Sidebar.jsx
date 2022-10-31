@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const Sidebar = () => {
-  const tags = ["dashboard", "users", "order"];
+  const tags = ["dashboard", "personal", "corporate", "order"];
 
   return (
     <div className="flex flex-col pt-20 sticky">
