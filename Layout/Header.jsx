@@ -5,7 +5,7 @@ const Header = () => {
     <div className="flex justify-between items-center py-2 px-5 border-b-2">
       <div>
         <h1 className="text-xl uppercase font-bold tracking-wider">
-          Next.js Dashboard
+          Next.js Dashboard 1
         </h1>
       </div>
       <div className="flex gap-x-3 items-center">
