@@ -43,7 +43,13 @@ const Adduser = () => {
           value={wilayah}
           onChange={(e) => setWilayah(e.target.value)}
         />
-        <select name="" onChange={(e) => setStatus(e.target.value)}>
+        <select
+          defaultChecked={"Default"}
+          onChange={(e) => setStatus(e.target.value)}
+        >
+          <option value="Default" disabled>
+            Pilih
+          </option>
           <option value="Aktif">Aktif</option>
           <option value="Tidak Aktif">Tidak Aktif</option>
         </select>

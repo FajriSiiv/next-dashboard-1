@@ -2,23 +2,23 @@ import ButtonLinks from "../components/ButtonLinks";
 
 export const columnsUser = [
   {
-    name: "Nama",
-    selector: (row) => row.nama,
+    name: "Name",
+    selector: (row) => row.name,
     sortable: true,
   },
   {
-    name: "Pembuatan",
-    selector: (row) => row.pembuatan,
+    name: "Email",
+    selector: (row) => row.email,
     sortable: true,
   },
   {
-    name: "Wilayah",
-    selector: (row) => row.wilayah,
+    name: "No.Phone",
+    selector: (row) => row.phone,
     sortable: true,
   },
   {
-    name: "Status",
-    selector: (row) => row.status,
+    name: "Website",
+    selector: (row) => row.website,
     sortable: true,
   },
   {
