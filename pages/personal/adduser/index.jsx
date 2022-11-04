@@ -6,17 +6,17 @@ const Adduser = () => {
   const router = useRouter();
 
   const [nama, setNama] = useState("");
-  const [pembuatan, setPembuatan] = useState();
-  const [wilayah, setWilayah] = useState("");
-  const [status, setStatus] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [website, setWebsite] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     let dataNew = {
-      nama: nama,
-      pembuatan: pembuatan,
-      wilayah: wilayah,
-      status: status,
+      name: nama,
+      number: number,
+      email: email,
+      website: website,
     };
     data.push(dataNew);
     console.log(data);
@@ -34,19 +34,20 @@ const Adduser = () => {
           onChange={(e) => setNama(e.target.value)}
         />
         <input
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
           type="number"
-          value={pembuatan}
-          onChange={(e) => setPembuatan(e.target.value)}
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
         />
         <input
           type="text"
-          value={wilayah}
-          onChange={(e) => setWilayah(e.target.value)}
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
         />
-        <select name="" onChange={(e) => setStatus(e.target.value)}>
-          <option value="Aktif">Aktif</option>
-          <option value="Tidak Aktif">Tidak Aktif</option>
-        </select>
         <button type="submit">submit</button>
       </form>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import DataTable from "react-data-table-component";
 
-const Tabel = ({ data, columns }) => {
+const Tabel = ({ data, columns, loading }) => {
   const customeStyles = {
     headRow: {
       style: {
@@ -35,6 +35,7 @@ const Tabel = ({ data, columns }) => {
       columns={columns}
       customStyles={customeStyles}
       paginationPerPage={[7]}
+      progressPending={loading}
       pagination
     />
   );
